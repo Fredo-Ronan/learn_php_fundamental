@@ -52,9 +52,9 @@ $gambar = [
 
     <main>
 
-        <!-- Carausel -->
+        <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="class-indicators">
+            <div class="carousel-indicators">
                 <?php foreach ($gambar as $i => $gbr) {
 
                 ?>
@@ -66,7 +66,6 @@ $gambar = [
                         class="<?php echo $i === 0 ? "active" : ""; ?>"
                         arial-label="Slide <?php echo $i+1; ?>" 
                     ></button>
-
                 <?php } ?>
             </div>
 
@@ -76,7 +75,7 @@ $gambar = [
 
                 ?>
 
-                    <div class="carousel-item <?php echo $i === 0? "active" : ""; ?>">
+                    <div class="carousel-item <?php echo $i === 0 ? "active" : ""; ?>">
 
                         <img 
                             src="<?php echo $gbr; ?>"
@@ -98,7 +97,7 @@ $gambar = [
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-target="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually hidden">Next</span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
 
@@ -151,7 +150,7 @@ $gambar = [
         </div>
     </main>
 
-    <script src="./assets/css/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/home-nav.js"></script>
 </body>
 </html>
