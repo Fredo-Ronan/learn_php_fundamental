@@ -43,9 +43,12 @@ if(isset($_POST["mencoba_login"])){
 
         "login_at" => date("Y-m-d H:i:s")
     ];
+
+    /* code UGD Mulai */
+    $_SESSION["list_fasilitas"] = [];
+    /* code UGD Berakhir */
+
     header("Location: ./dashboard.php");
 }
-
-
 
 ?>
